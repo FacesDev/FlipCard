@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+</head>
+
+<body>
+    <div class="manage_wrapper">
+        <div class="nav_bar">
+            {{#display}}
+            <a class="nav" href="/home">Home</a>
+
+
+            <a href="/new_card" class="nav">Create a new card</a>
+            <a href="/logout" class="nav">Log Out</a>
+        </div>
+
+        <p class="nav"><b>{{display}}'s cards</b></p>
+
+        {{/display}}
+<div class="manage_cards_wrapper">
+            {{#result}}
+
+            <form class="card_container" method="post" action="/decks/:{{id}}">
+                {{#.}}
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <p>{{question}}</p>
+                        </div>
+                        <div class="back">
+                           <p>{{answer}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/.}}
+                <button type="submit">Delete</button>
+            </form>
+            {{/result}}
+    </div>
+
+
+</body>
+
+</html>

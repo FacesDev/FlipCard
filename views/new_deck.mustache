@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="manage_wrapper">
+            <div class="nav_bar">
+                <a class="nav" href="home">Home</a>
+                <a class="nav" href="/">Log Out</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Create a New Deck</h1>
+            <form class="form" method="post" action="/new_deck">
+                <input type="text" name="deck" placeholder="Username">
+
+                <button type="submit" id="login-button">Submit</button> {{#errors}}
+                <p>{{msg}}</p>
+                {{/errors}}
+            </form>
+
+        </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

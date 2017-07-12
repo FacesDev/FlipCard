@@ -1,0 +1,22 @@
+{
+  "name": "week-6-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "crypto": "0.0.3",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "mocha": "^3.4.2",
+    "pg": "^6.4.0",
+    "sequelize": "^4.2.1",
+    "supertest": "^3.0.0"
+  }
+}

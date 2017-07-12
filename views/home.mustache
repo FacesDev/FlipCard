@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+</head>
+
+<body>
+
+    <div class="manage_wrapper">
+        <div class="nav_bar">
+            {{#display}}
+
+            <a class="nav" href="new_deck">Create a Deck
+        <a class="nav" href="logout">Log Out</a> 
+        {{/display}}
+        </div>
+    </div>
+    <div class="wrapper_home">
+
+        <div class="container">
+            {{#display}}
+            <h1>Welcome Back {{display}}</h1>
+            {{/display}}
+            <div class="deck_wrapper">
+                {{#result}}
+                <div class="deck_container deck_home">
+                    <a class="decks" href="/{{id}}"><b>{{name}}</b></a>
+                </div>
+                {{/result}}
+
+            </div>
+        </div>
+
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

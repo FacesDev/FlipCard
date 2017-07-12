@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+           
+            <div class="container">
+                <h1>Welcome</h1>
+                <form class="form" method="post" action="/signup">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="confirm" placeholder="Confirm Password">
+                    <button type="submit" id="login-button">Login</button>
+                    <a class="nav" href="/">Log In</a>
+
+                    
+                    {{#errors}}
+                    <p>{{msg}}</p>
+                    {{/errors}}
+                </form>
+               
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </body>
+
+    </html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    </head>
+
+    <body>
+        <div class="manage_wrapper">
+            <div class="nav_bar">
+                <a class="nav" href="home">Home</a>
+                <a class="nav" href="/">Log Out</a>
+            </div>
+        </div>
+        <div class="wrapper">
+
+
+            <div class="container">
+                <h1>Create a New Card</h1>
+                <form class="form" method="post" action="/new_card">
+                    <textarea class="create_card" name="question" cols="40" rows="5" placeholder="Question"></textarea>
+                    <textarea class="create_card" name="answer" cols="40" rows="5" placeholder="Answer"></textarea>
+                    <button class="create_button" type="submit">Submit</button> {{#errors}}
+                    <p>{{msg}}</p>
+                    {{/errors}}
+                </form>
+
+            </div>
+
+            <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </body>
+
+    </html>
